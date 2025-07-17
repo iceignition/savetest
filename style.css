@@ -178,6 +178,10 @@
     width: 50vw;
   }
 
+.work-middle video{
+    width: 45vw;
+  }
+
 
 
   iframe {
@@ -229,6 +233,10 @@
 
       .work-new {
         position: relative;
+        width: 100vw;
+      }
+
+    .work-middle video{
         width: 100vw;
       }
 }
