@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    background-color: #ffffff;
+  }
+
+  h1{
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+  }
+
+  h2{
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    line-height: 18px;
+    font-weight: 700;
+    color: black;
+  }
+  
+  a{
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit;         /* 부모 텍스트 색상 물려받기 */
+    font-weight: normal;    /* 볼드 제거 */
+  }
+
+
+
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .top-text {
+    display: flex;
+    gap: 20px; /* 링크 사이 간격 */
+    justify-content: center;
+  }
+
+
+  /*작업소개*/
+  .work-context{
+    margin-top: 10vh;
+  }
+
+
+  /* 고정 상단 텍스트 */
+  .fixed-header {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    pointer-events: none; /* 링크 제외 나머지 요소 클릭 안되게 */
+  }
+  
+  .fixed-header h1 {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(250, 65, 114);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 6px;
+    word-break: break-word;
+  }
+  .work-context h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(250, 65, 114);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 6px;
+    word-break: break-word;
+  }
+
+  .fixed-header a {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    pointer-events: auto; /* 링크 클릭 가능하게 */
+  }
+  
+  /* 스크롤되는 콘텐츠 */
+  .scroll-container {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+    width: 100vw;
+  }
+  
+  .work-item {
+    flex: 1 1 calc(50% - 10px); /* 두 개를 가로로 나란히 */
+  }
+  
+  .work-item img {
+    width: 50vw;
+    display: block;
+    border-radius: 0px;
+
+  }
+
+  .work-item video {
+    width: 50vw;
+    display: block;
+    border-radius: 0px;
+
+  }
+
+
+
+/*유튜브 영상 관리*/
+  .work-item iframe {
+    width: 100%;
+    aspect-ratio: 866 / 1077;
+    border: none;
+  }
+
+
+
+  .work-center img{
+    width: 50vw;
+  }
+
+  .work-center video{
+    width: 40vw;
+  }
+
+  .work-minimal img{
+    width: 31vw;
+    margin-top: 10px;
+  }
+
+  .work-full img{
+    width: 100vw;
+  }
+
+  .work-full video{
+    width: 100vw;
+  }
+
+
+
+  iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  
+  /* 반응형: 화면이 768px 이하일 때 세로로 쌓이도록 */
+  @media screen and (max-width: 768px) {
+    .work {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .work-item {
+      flex: 1 1 100%;
+    }
+    .work-item img {
+        width: 100vw;
+      }
+    .work-item video {
+        width: 100vw;
+    }
+
+    .work-center video{
+      width: 100vw;
+    }
+  
+
+    h1 {
+        font-size: 9px !important;;
+    }
+    h2 {
+        font-size: 9px !important;;
+    }
+    .work-center img{
+        width: 100vw ;
+      }
+}
