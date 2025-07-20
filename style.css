@@ -25,11 +25,6 @@
     color: black;
   }
   
-  a{
-    text-decoration: none; /* 밑줄 제거 */
-    color: inherit;         /* 부모 텍스트 색상 물려받기 */
-    font-weight: normal;    /* 볼드 제거 */
-  }
 
 
 
@@ -79,6 +74,7 @@
     margin-right: 20px;
     margin-bottom: 6px;
     word-break: break-word;
+    line-height: 19px;
   }
 
   .fixed-header a {
@@ -151,6 +147,10 @@
     width: 40vw;
   }
 
+  .work-middle video{
+    width: 45vw;
+  }
+
   .work-minimal img{
     width: 31vw;
     margin-top: 10px;
@@ -178,9 +178,23 @@
     width: 50vw;
   }
 
-.work-middle video{
-    width: 45vw;
+
+  a {
+    text-decoration: underline;
   }
+
+
+
+
+
+ 
+
+
+
+
+
+
+
 
 
 
@@ -236,9 +250,14 @@
         width: 100vw;
       }
 
-    .work-middle video{
+      .work-middle video{
         width: 100vw;
       }
+
+      .work-context h2 {
+        line-height: 13px;
+      }
+    
 }
 
 
