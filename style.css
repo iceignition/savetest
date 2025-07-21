@@ -4,11 +4,20 @@
     box-sizing: border-box;
   }
   
-  body, html {
+  html, body {
     height: 100%;
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 600;
     background-color: #ffffff;
+  
+    /* 가로 스크롤 숨기기 */
+    overflow-x: hidden;
+  
+    /* 세로 스크롤 허용 */
+    overflow-y: auto; /* 또는 scroll */
+    
+    /* 세로 스크롤바 스타일 조절은 필요에 따라 */
+    scrollbar-width: auto; /* Firefox에서 스크롤바 보이도록 */
   }
 
   h1{
@@ -64,6 +73,7 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 6px;
+    line-height: 16px;
     word-break: break-word;
   }
   .work-context h2 {
@@ -237,6 +247,7 @@
 
     h1 {
         font-size: 9px !important;;
+        line-height: 12px!important;;
     }
     h2 {
         font-size: 9px !important;;
